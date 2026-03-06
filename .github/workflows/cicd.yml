@@ -34,6 +34,6 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/socketgithubv2026march7:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/socketgithubv2026march7v2.0.0:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
